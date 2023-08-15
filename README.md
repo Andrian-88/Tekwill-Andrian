@@ -8,7 +8,7 @@
 In this project, I included a link to the official Markdown website and showed how to format text using various functions, such as bolding and creating lists.
 ### How to use this project
 
-To use this project, simply download or clone the file from GitHub and open it in a text editor or browser to see how the text is formatted.
+To use this project, simply download or clone the file from GitHub and open ;; it in a text editor or browser to see how the text is formatted.
 
 ### Useful links
 
@@ -23,3 +23,4 @@ Also, you can find a more detailed list of Markdown syntax features at:
 
 
 
+gi
