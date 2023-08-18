@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>User Registration Form </title>
+    </head>
+    <body>
+        <form action="/action_page.php" method="get">
+            <fieldset>
+                <legend>Basic User Information:</legend>
+                <br>
+                
+                <label for="fullname">Full name:</label>
+                <input type="text" id="fullname" name="fullname" value="">
+                <br><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" value="">
+                <br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="userpass" value="">
+                <label for="confirmpassword">Confirm Password:</label>
+                <input type="password" id="confirmpassword" name="userpass" value="">
+                <br><br>
+                <label>Gender:</label>
+<input type="radio" name="gender" id="malegender">
+<label for="malegender">Male</label>
+<input type="radio" name="gender" id="femalegender">
+<label for="femalegender">Female</label>
+<br><br>
+<label for="birthdate">Date of Birth:</label>
+<input type="date" name="dateofbirth" id="birthdate">              
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Address Information:</legend>
+                <label for="address">Street Address:</label>
+                <textarea name="address-information" id="address"></textarea>
+                <br><br>
+                <label for="country">Country:</label>
+                <select name="country" id="country">
+                    <option value="usa">U.S.A.</option>
+                    <option value="canada">Canada</option>
+                    <option value="mexico">Mexico</option>
+                    <option value="brazil">Brazil</option>
+                    <option value="argentina">Argentina</option>
+                    <option value="cuba">Cuba</option>
+                    <option value="venezuela">Venezuela</option>
+                </select>
+                <br><br>
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city">
+                <br><br>
+                <label for="postal-code">Postal Code:</label>
+                <input type="text" id="postal-code" name="postal-code">
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Preferences:</legend>
+                <label>Preferred Contact Method:</label>
+                <input type="checkbox" id="contact-method" name="contact-method">
+                <label for="contact-method">Email</label>
+                <input type="checkbox" id="method" name="method">
+                <label for="method">Phone</label>
+                <input type="checkbox" id="contact" name="contact">
+                <label for="contact">Postal mail</label>
+        <br>
+        <label for="color">Preferred Color:</label>
+        <input type="color" id="color" name="color">
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Additional Details:</legend>
+                <label for="additonal-details">How did you hear about us?</label>
+                <select name="additonal-details" id="additonal-details">
+                    <option value="internet">Internet</option>
+                    <option value="tv">TV</option>
+                    <option value="friends">Friends</option>
+                    <option value="other-options">Other Options</option>
+                </select>
+                <br>
+                <label for="feedback">Feedback/Comments:</label>
+            
+                <textarea name="feedback-comments" id="feedback"></textarea>↩
+            
+            </fieldset> 
+            <br>
+            <fieldset>
+                <legend>Profile:</legend>
+                <label for="profile-picture">Upload a Profile Picture:</label>
+                <input type="file" id="profile-picture">
+                <br>
+                <label for="website-url">Website URL:</label>
+                <input type="url" name="website-url" id="website-url">
+                <br>
+                <label for="experience-level">Experience Level with HTML:</label>
+                <input type="range" id="experience-level" name="experience-level" >
+            
+            </fieldset>
+            <input type="submit">
+            <input type="reset">
+        </form>
+    </body>
+</html>
