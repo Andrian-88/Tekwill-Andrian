@@ -2,42 +2,59 @@
 <html lang="en">
     <head>
         <title>User Registration Form </title>
+        <style>
+        
+            fieldset{ max-width:fit-content; border-color:darkcyan;border-radius: 5px; margin-left: 500px;
+           }
+               
+            legend{text-align: left;  font-family: Arial, Helvetica, sans-serif; font-style: italic; color: green;
+            }
+           
+            
+        </style>    
+        <link rel="stylesheet" href="C:/As-gard/Tekwill/Tekwill-Andrian/style.css">
     </head>
     <body>
         <form action="/action_page.php" method="get">
             <fieldset>
                 <legend>Basic User Information:</legend>
                 <br>
-                
+            <div class="user-information">
+                <p>
                 <label for="fullname">Full name:</label>
-                <input type="text" id="fullname" name="fullname" value="">
-                <br><br>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" value="">
-                <br><br>
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="userpass" value="">
-                <label for="confirmpassword">Confirm Password:</label>
-                <input type="password" id="confirmpassword" name="userpass" value="">
-                <br><br>
-                <label>Gender:</label>
-<input type="radio" name="gender" id="malegender">
-<label for="malegender">Male</label>
-<input type="radio" name="gender" id="femalegender">
-<label for="femalegender">Female</label>
-<br><br>
-<label for="birthdate">Date of Birth:</label>
-<input type="date" name="dateofbirth" id="birthdate">              
+            </p>
+
+                <p>
+                    <input style="width: 400px;" type="text" id="fullname" name="fullname" value="">
+                </p>
+            
+                <p><label for="email">Email:</label></p>
+                <p><input style="width: 400px;" type="email" id="email" name="email" value=""></p>
+            
+                <p><label for="password">Password:</label></p>
+                <p><input style="width: 400px;" type="password" id="password" name="userpass" value=""></p>
+                <p><label for="confirmpassword">Confirm Password:</label></p>
+                <p><input style="width: 400px;" type="password" id="confirmpassword" name="userpass" value=""></p>
+            
+                <p><label>Gender:</label>
+                <input type="radio" name="gender" id="malegender">
+                <label for="malegender">Male</label>
+                <input type="radio" name="gender" id="femalegender">
+                <label for="femalegender">Female</label></p>
+            
+                <p><label for="birthdate">Date of Birth:</label></p>
+                <p><input style="width: 400px;" type="date" name="dateofbirth" id="birthdate"></p>
+            </div>
             </fieldset>
             <br>
             <fieldset>
                 <legend>Address Information:</legend>
-                <label for="address">Street Address:</label>
-                <textarea name="address-information" id="address"></textarea>
-                <br><br>
-                <label for="country">Country:</label>
-                <select name="country" id="country">
+                <div>
+                <p><label for="address">Street Address:</label></p>
+                <p><textarea style="width: 400px;" name="address-information" id="address"></textarea>
+                </p>
+                <p><label for="country">Country:</label></p>
+                <p><select style="width: 405px;" name="country" id="country">
                     <option value="usa">U.S.A.</option>
                     <option value="canada">Canada</option>
                     <option value="mexico">Mexico</option>
@@ -45,59 +62,69 @@
                     <option value="argentina">Argentina</option>
                     <option value="cuba">Cuba</option>
                     <option value="venezuela">Venezuela</option>
-                </select>
-                <br><br>
-                <label for="city">City:</label>
-                <input type="text" id="city" name="city">
-                <br><br>
-                <label for="postal-code">Postal Code:</label>
-                <input type="text" id="postal-code" name="postal-code">
+                </select></p>
+                <p><label for="city">Ci 1ty:</label></p>
+                <p><input style="width: 400px;" type="text" id="city" name="city"></p>
+                <p><label for="postal-code">Postal Code:</label></p>
+                <p><input style="width: 400px;" type="text" id="postal-code" name="postal-code"></p>
+            </div>
             </fieldset>
             <br>
-            <fieldset>
+            <fieldset style="padding-right: 195px;">
                 <legend>Preferences:</legend>
-                <label>Preferred Contact Method:</label>
-                <input type="checkbox" id="contact-method" name="contact-method">
+                <div>
+               <p><label>Preferred Contact Method:</label></p>
+                <p><input type="checkbox" id="contact-method" name="contact-method">
                 <label for="contact-method">Email</label>
                 <input type="checkbox" id="method" name="method">
                 <label for="method">Phone</label>
                 <input type="checkbox" id="contact" name="contact">
-                <label for="contact">Postal mail</label>
+                <label for="contact">Postal mail</label></p>
         <br>
-        <label for="color">Preferred Color:</label>
-        <input type="color" id="color" name="color">
+        <p><label for="color">Preferred Color:</label>
+       <input type="color" id="color" name="color"></p>
+                </div>
             </fieldset>
             <br>
-            <fieldset>
+            <fieldset style="padding-right: 20px;">
                 <legend>Additional Details:</legend>
-                <label for="additonal-details">How did you hear about us?</label>
-                <select name="additonal-details" id="additonal-details">
+                <div>
+                    <p><label for="additonal-details">How did you hear about us?</label></p>
+                <p><select style="width: 405px;" name="additonal-details" id="additonal-details">
                     <option value="internet">Internet</option>
                     <option value="tv">TV</option>
                     <option value="friends">Friends</option>
                     <option value="other-options">Other Options</option>
                 </select>
-                <br>
-                <label for="feedback">Feedback/Comments:</label>
+            </p>
+                <p><label for="feedback">Feedback/Comments:</label></p>
             
-                <textarea name="feedback-comments" id="feedback"></textarea>↩
+                <p><textarea style="width: 400px;" name="feedback-comments" id="feedback"></textarea></p>
+            </div>
             
-            </fieldset> 
+            </fieldset>
             <br>
             <fieldset>
                 <legend>Profile:</legend>
-                <label for="profile-picture">Upload a Profile Picture:</label>
-                <input type="file" id="profile-picture">
+                <div>
+                    <p><label for="profile-picture">Upload a Profile Picture:</label>
+                <input type="file" id="profile-picture"></p>
                 <br>
-                <label for="website-url">Website URL:</label>
-                <input type="url" name="website-url" id="website-url">
+                <p><label for="website-url">Website URL:</label></p>
+                <p><input style="width: 350px;" type="url" name="website-url" id="website-url"></p>
                 <br>
-                <label for="experience-level">Experience Level with HTML:</label>
-                <input type="range" id="experience-level" name="experience-level" >
+                <p><label for="experience-level">Experience Level with HTML:</label>
+                <input type="range" id="experience-level" name="experience-level" min="1" max="10"
+                    oninput="displayValue.value=experience.value"> 
+                <output id="displayValue"> 5 </output> / 10 </p>
             
+                </div>
             </fieldset>
-            <input type="submit">
-            <input type="reset">
-        </form>
-    </body>
-</html>
+            <br>
+            <input class="submit-button" type="submit">
+            
+            <input class="reset-button" type="reset">
+            </form>
+            </body>
+            
+            </html>
